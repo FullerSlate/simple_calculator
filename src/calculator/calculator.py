@@ -1,4 +1,5 @@
 """This module contains the calculator functions for the formulas square, tri, lazy caterer, and magic squares"""
+import math
 
 
 def squareNums(n):
@@ -41,3 +42,16 @@ if __name__ == "__main__":
 
     result = run_calculator(input_formula, input_num)
     print(result)
+
+
+def hypotenuse(a, b):
+    """Calculates hypotenuse of a right triangle"""
+    return math.sqrt(a**2 + b**2)
+
+def power(base, exponent):
+    """Raises base to exponent"""
+    return base ** exponent
+
+def modulus(a, b):
+    """Returns remainder"""
+    return a % b
